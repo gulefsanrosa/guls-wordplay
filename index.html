@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Explore English vocabulary through simple examples, everyday humour and memes."
+  >
+
+  <title>Gül’s Wordplay</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="words.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <!-- ÜST MENÜ -->
+  <header class="site-header">
+    <a class="logo" href="#home">
+      Gül’s Wordplay <span aria-hidden="true">🌹</span>
+    </a>
+
+    <nav aria-label="Main navigation">
+      <a href="#words">Words</a>
+      <a href="#practice">Practice</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- KARŞILAMA -->
+    <section class="hero" id="home">
+      <span class="label">
+        ENGLISH WORDS. EVERYDAY HUMOUR.
+      </span>
+
+      <h1>
+        New words.<br>
+        Familiar chaos.
+      </h1>
+
+      <p>
+        A little English, a little humour.
+        Discover new words through familiar situations
+        and memorable memes.
+      </p>
+
+      <a class="button button-primary" href="#words">
+        Start learning →
+      </a>
+    </section>
+
+    <!-- KELİMELER -->
+    <section class="words-section" id="words">
+      <div class="section-heading">
+        <div>
+          <span class="label">LEARN & LAUGH</span>
+          <h2>Find your next word</h2>
+        </div>
+
+        <label class="category-picker" for="category-select">
+          Choose a word type
+
+          <select id="category-select">
+            <option value="all">All words</option>
+            <option value="noun">Nouns — İsimler</option>
+            <option value="verb">Verbs — Fiiller</option>
+            <option value="adjective">Adjectives — Sıfatlar</option>
+            <option value="adverb">Adverbs — Zarflar</option>
+            <option value="phrase">Phrases — İfadeler</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="word-layout">
+        <!-- KELİME KARTI -->
+        <article class="word-card" aria-labelledby="word-title">
+          <span class="label" id="word-category">
+            ALL WORDS
+          </span>
+
+          <h3 id="word-title">introduce</h3>
+
+          <span class="word-type" id="word-type">
+            verb
+          </span>
+
+          <p
+            class="word-meaning"
+            id="word-meaning"
+            lang="tr"
+          >
+            Tanıştırmak
+          </p>
+
+          <p class="word-definition" id="word-definition">
+            To tell someone another person's name
+            when they meet for the first time.
+          </p>
+
+          <div class="example-box">
+            <span class="label">IN A SENTENCE</span>
+
+            <p id="word-example">
+              Let me introduce my friend Ali.
+            </p>
+
+            <button
+              class="button button-secondary"
+              id="translation-button"
+              type="button"
+              aria-expanded="false"
+              aria-controls="word-translation"
+            >
+              Show Turkish meaning
+            </button>
+
+            <p id="word-translation" lang="tr" hidden>
+              Seni arkadaşım Ali ile tanıştırayım.
+            </p>
+          </div>
+        </article>
+
+        <!-- MEME KARTI -->
+        <article class="meme-card">
+          <span class="label">THE MEME</span>
+
+          <h3 class="meme-sentence" id="meme-sentence">
+            My mum introduces me to a distant relative.
+          </h3>
+
+          <div class="meme-frame">
+            <img
+              id="meme-image"
+              alt=""
+              hidden
+            >
+
+            <p
+              class="image-placeholder"
+              id="image-placeholder"
+            >
+              Your meme goes here.
+            </p>
+          </div>
+        </article>
+      </div>
+
+      <!-- KELİME GEÇİŞLERİ -->
+      <div class="word-navigation">
+        <button
+          class="button button-secondary"
+          id="previous-button"
+          type="button"
+          disabled
+        >
+          ← Previous
+        </button>
+
+        <span
+          id="word-counter"
+          role="status"
+          aria-live="polite"
+          aria-atomic="true"
+        >
+          Loading words…
+        </span>
+
+        <button
+          class="button button-secondary"
+          id="next-button"
+          type="button"
+          disabled
+        >
+          Next →
+        </button>
+      </div>
+
+      <p class="section-note">
+        Choose a category, explore the words,
+        then try the practice below.
+      </p>
+    </section>
+
+    <!-- TEKRAR OYUNU -->
+    <section class="practice-section" id="practice">
+      <span class="label">YOUR TURN</span>
+
+      <h2>Did it stick?</h2>
+
+      <p>
+        Test yourself on the words in your selected category.
+      </p>
+
+      <div
+        class="practice-card"
+        id="practice-container"
+      >
+        <p>Preparing your practice…</p>
+      </div>
+    </section>
+
+    <!-- HAKKINDA -->
+    <!-- HAKKINDA -->
+<section class="about-section" id="about">
+  <span class="label">BEHIND THE WORDPLAY</span>
+
+  <h2>About Me</h2>
+
+  <p>
+    My name is Gülefşan Soslu. I am a Computer Engineering
+    student at Çankaya University. I have wanted to become
+    a computer engineer since I was a child. Coding is one
+    of my main interests.
+  </p>
+
+  <p>
+    I also have an associate degree in Computer Programming
+    from Eskişehir Technical University. I used the knowledge
+    from this programme while developing this website.
+  </p>
+
+  <p>
+    I started the English Preparatory Programme on
+    28 September 2026. I am currently studying at A2 level.
+    I enjoy this learning experience and learn many new
+    things in my classes.
+  </p>
+
+  <h3 class="about-subheading">About Gül’s Wordplay</h3>
+
+  <p>
+    Gül’s Wordplay is my project for the A2 Co-Curricular
+    Activity Assignment. When I first read the assignment,
+    I immediately wanted to create a website. This project
+    brings together my interest in coding and my English studies.
+  </p>
+
+  <p>
+    Vocabulary is one of the most difficult parts of learning
+    English for me. For this reason, I wanted to create a
+    website for people who have similar difficulties.
+    All the words on this website come from my weekly
+    Vocabulary Notebook assignments.
+  </p>
+
+  <p>
+    The website includes word definitions, Turkish meanings,
+    example sentences, memes and practice questions.
+    My aim is to make vocabulary practice useful and enjoyable
+    through everyday humour.
+  </p>
+
+  <p>
+    I used ChatGPT and Gemini for support during the development
+    process. I also used my previous programming knowledge.
+    In the future, I hope to build larger websites.
+    This small project is an important step towards that goal.
+  </p>
+
+  <h3 class="about-subheading">Acknowledgements</h3>
+
+  <p>
+    I would like to thank my teachers, Besime Aktuğ,
+    Leyla Şahbaz and Burcu Atay, for their support
+    and the valuable lessons they teach.
+  </p>
+
+  <p>
+    I would especially like to thank Besime Aktuğ for
+    everything she has taught me and everything I will
+    learn from her in the future.
+  </p>
+</section>
+  </main>
+
+  <!-- ALT BİLGİ -->
+  <footer class="site-footer">
+    <p>
+      Gül’s Wordplay · English words, everyday humour.
+    </p>
+  </footer>
+</body>
+</html>
